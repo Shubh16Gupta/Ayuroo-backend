@@ -42,10 +42,9 @@ const lifestyleRoutes = require("./routes/lifestyleRoutes");
 app.use("/api/v1/lifestyle", lifestyleRoutes);
 
 // For local development only
-if (process.env.NODE_ENV !== "production") {
-  app.listen(PORT, () => {
-    console.log(`app is running at ${PORT}`);
-  });
-}
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 module.exports = app;
+
