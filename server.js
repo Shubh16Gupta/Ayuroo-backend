@@ -9,8 +9,11 @@ const PORT = process.env.PORT || 8000;
 const cors = require("cors");
 app.use(cors({
   origin: [
-   "https://frontend-gamma-seven-86.vercel.app",
-   "https://frontend-gamma-seven-86.vercel.app/"
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://frontend-gamma-seven-86.vercel.app",
+    "https://frontend-gamma-seven-86.vercel.app/"
   ],
   credentials: true
 }));
