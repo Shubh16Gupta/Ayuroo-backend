@@ -1,17 +1,4 @@
-import subprocess
-import sys
 
-# Replace 'requests' with the module name you want to install
-module_name = 'joblib'
-
-try:
-    __import__(module_name)
-    print(f"{module_name} is already installed.")
-except ImportError:
-    print(f"{module_name} not found. Installing now...")
-    # Command to install the module using pip via subprocess
-    subprocess.check_call([sys.executable, '-m', 'pip', 'install', module_name])
-    print(f"Successfully installed {module_name}.")
 
 import sys
 import json
